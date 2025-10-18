@@ -127,17 +127,18 @@ main {
     flex-wrap: wrap;
     justify-content: center;
     gap: 2rem;
-    width: 100%;
-}
-
-container img {
-    width: 100%;
-    height: auto;
 }
 
 .container > * {
-    flex: 1 1 calc(25% - 1.5rem); /* 4 por linha, considerando gap */
+    flex: 1 1 calc(25% - 2rem);
+    max-width: calc(25% - 2rem); 
     box-sizing: border-box;
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .minhas-viagens img {
