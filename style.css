@@ -9,24 +9,21 @@
     --text-color: #6C6C6C;
 }
 
-h1 {
-    color: #313131;
-}
-
 h1, h2, p, li, a {
     font-family: var(--text-font-family);
+    color: var(--text-color);
 }
 
 ul {
     list-style: none;
 }
 
-p, a, li {
-    color: var(--text-color);
-}
-
 main {
     background-color: #F5F5F5;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
 }
 
 .cabecalho {
@@ -34,17 +31,17 @@ main {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 1.25rem 3rem;
+    padding: 1.25rem 2%;
     flex-wrap: wrap;
 }
 
 .cabecalho ul {
     display: flex;
     flex-direction: row;
-    list-style: none;
     align-items: center;
     justify-content: flex-end;
     gap: 1rem;
+    flex-wrap: wrap;
 }
 
 .cabecalho p {
@@ -57,46 +54,40 @@ main {
 }
 
 .cabecalho img {
-    display: flex;
-    align-items: center;
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 .explorar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    padding: 3rem;
+    align-items: flex-start;
+    padding: 3rem 2%;
     flex-wrap: wrap;
-    gap: 12rem;
+    gap: 2rem;
 }
 
 .explorar-area {
     display: flex;
     flex-direction: row;
     align-items: center;
-    height: 13rem;
     flex-wrap: wrap;
     gap: 2rem;
+    width: 100%;
 }
 
 .explorar-imagem img {
-    width: 11.5rem;
-    height: 11.5rem;
-    background-size: cover;
-}
-
-.explorar-link:hover {
-    color: #EF5F4C;
-}
-
-.minhas-viagens-link:hover {
-    color: #EF5F4C;
+    width: 100%;
+    max-width: 11.5rem;
+    height: auto;
+    object-fit: cover;
 }
 
 .explorar .text {
-    width: 25rem;
-    height: 12rem;
+    width: 100%;
+    max-width: 25rem;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
@@ -106,11 +97,10 @@ main {
     display: flex;
     flex-direction: row;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
     width: 100%;
     max-width: 18.5rem;
-    height: 8rem;
-    flex-wrap: wrap;
-    flex-basis: 100%;
 }
 
 .explorar-area-icons ul {
@@ -124,39 +114,36 @@ main {
     gap: 0.5rem;
 }
 
-.explorar-imagem {
-    vertical-align: middle;
-}
-
 .minhas-viagens {
     display: flex;
     flex-direction: column;
     padding-top: 1rem;
+    width: 100%;
 }
 
 .container {
     display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 1rem;
-    display: flex;
     flex-wrap: wrap;
-    row-gap: 2rem;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
 }
 
 .minhas-viagens img {
-    width: 17.8rem;
-    height: 17.8rem;
+    width: 100%;
+    max-width: 17.8rem;
+    height: auto;
 }
 
 footer {
     display: flex;
     flex-direction: row;
-    padding: 1.25rem 3rem;
     justify-content: space-between;
+    padding: 1.25rem 2%;
     background-color: #F5F5F5;
     text-decoration: underline;
-    margin-top: 1rem;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
 .informacoes-legais {
@@ -168,4 +155,3 @@ footer p:hover {
     cursor: pointer;
     color: #EF5F4C;
 }
-
