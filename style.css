@@ -139,11 +139,12 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     padding: 1.25rem 2%;
     background-color: #F5F5F5;
     text-decoration: underline;
-    flex-wrap: wrap;
     gap: 1rem;
+    flex-wrap: nowrap;
 }
 
 .informacoes-legais {
